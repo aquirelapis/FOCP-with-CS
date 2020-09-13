@@ -1,0 +1,15 @@
+Initialize a variable of type int with a value of 256 in hexadecimal format (256 is 100 in a numeral system with base 16).
+
+namespace NumberInHex
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numberInDec = 256;
+            int numberInHex = 0x100;
+            Console.WriteLine(numberInDec);
+            Console.WriteLine(numberInHex);
+        }
+    }
+}
