@@ -1,0 +1,22 @@
+Write an expression that looks for a given integer if its third digit (right to left) is 7.
+
+namespace ThirdDigitSeven
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a number to determine if its third digit is 7: ");
+            int check = int.Parse(Console.ReadLine());
+            int division = (check / 100);
+            if(division % 10 == 7)
+            {
+                Console.WriteLine("The Third digit is 7");
+            }
+            else
+            {
+                Console.WriteLine("The third digit is not 7");
+            }
+        }
+    }
+}
