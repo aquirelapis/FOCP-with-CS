@@ -1,0 +1,12 @@
+Write a console application that prints your first and last name on the console.
+
+namespace NameBoy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ralph Schueler");
+        }
+    }
+}
