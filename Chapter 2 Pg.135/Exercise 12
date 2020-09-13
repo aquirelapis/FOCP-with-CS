@@ -1,0 +1,35 @@
+A company dealing with marketing wants to keep a data record of its emplyees. Each record should have the
+following characcteristic - first name, last name, age, gender('m' or 'f') and unique employee number (27560000 to
+27569999). Declare appropriate varables needed to maintain the information for an employee by using the appropriate
+data types and attribute names.
+
+namespace EmployeeProfile
+{
+    public class Employee
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public char Gender { get; set; }
+        public int EmployeeNumber { get; set; }
+        public Employee(string firstName, string lastName, int age, char gender,
+            int employeeNumber) 
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            Gender = gender;
+            EmployeeNumber = employeeNumber;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee employee1 = new Employee("Ralph", "Schueler", 23, 'm', 27560000);
+            Console.WriteLine("person1 Name = {0} {1} Age = {2} Gender = {3} " +
+                "Employee Number = {4}", employee1.FirstName, employee1.LastName,
+                employee1.Age, employee1.Gender, employee1.EmployeeNumber);
+        }
+    }
+}
