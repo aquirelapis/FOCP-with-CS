@@ -1,0 +1,19 @@
+Write a program to print a figure in the shape of a heart by the sign "o".
+
+namespace ZeroHeart
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char o = (char)0x006F;
+            Console.WriteLine(o);
+            Console.WriteLine(" oo oo ");
+            Console.WriteLine("o  o  o");
+            Console.WriteLine("o     o");
+            Console.WriteLine(" o   o ");
+            Console.WriteLine("  o o  ");
+            Console.WriteLine("   o   ");
+        }
+    }
+}
