@@ -1,0 +1,22 @@
+Write an expression that checks whether an integer is odd or even.
+
+namespace EvenChecker
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int check;
+            Console.Write("Enter a number to check if it is Odd or Even: ");
+            check = int.Parse(Console.ReadLine());
+            if (check % 2 == 0)
+            {
+                Console.WriteLine(check + " is even");
+            }
+            else
+            {
+                Console.WriteLine(check + " is odd");
+            }
+        }
+    }
+}
