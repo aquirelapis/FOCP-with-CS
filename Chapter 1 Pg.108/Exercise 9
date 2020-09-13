@@ -1,0 +1,16 @@
+Write a program that prints the square root of 12345.
+
+namespace SquareRoot
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number to be squared : ");
+            int number = Convert.ToInt16(Console.ReadLine());
+            double sqrtNumber = Math.Sqrt(number);
+            Console.WriteLine("Square root of {0} is: {1}", number, sqrtNumber);
+            Console.ReadLine();
+        }
+    }
+}
