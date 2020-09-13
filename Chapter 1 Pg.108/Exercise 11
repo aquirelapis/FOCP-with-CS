@@ -1,0 +1,16 @@
+Write a program that reads your age from the console and prints your age after 10 years.
+
+namespace AgeAfterDecade
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your current age : ");
+            int age = Convert.ToInt16(Console.ReadLine());
+            double agePlus = age + 10;
+            Console.WriteLine("After ten years you will be {0} years old.", agePlus);
+            Console.ReadLine();
+        }
+    }
+}
