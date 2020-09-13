@@ -1,0 +1,35 @@
+Write an expression that checks for a given point {x, y} if it is within the circle K({0,0}, R=5) and out
+of the rectangle[{-1,1}, {5,5}]. Clarification: for the rectangle the lower left and the upper right corners are
+given. Pythagorean Theorum a2 + b2 = c2. inside circle when (x*x) + (y*y) </= 5*5
+
+namespace PointChecker
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter in a point on a grid to see if it is within the" +
+                " given circle(center = {0,0}, Radius = 5) and not inside the" +
+                " given rectangle [{-1,-1}, {5,5}].");
+            Console.Write("Give your x coordinate: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write("Give your y coordinate: ");
+            int y = int.Parse(Console.ReadLine());
+
+
+            bool inCircle = ((x * x) + (y * y) <= 25);
+            bool inRectangle = ((x >= -1) & (x <= 5) & (y >= -1) & (y <= 5));
+
+            if ((inCircle == true) & (inRectangle == false))
+            {
+                Console.WriteLine("The given point is inside the circle and" +
+                    " outside the rectangle.");
+            }
+            else
+            {
+                Console.WriteLine("The given point is not inside the circle" +
+                    " AND outside the rectangle.");
+            }
+        }
+    }
+}
