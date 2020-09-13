@@ -1,0 +1,33 @@
+We are given the number n and a position p. Write a sequence of operations that prints the value of the
+bit on the position p in the number (0 or 1). 
+Example: n=35, p=5 -> 1. 
+Another example: n=35, p=6 -> 0.
+
+namespace BitTracker
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number and then enter the position of a" +
+                "bit in that number to find its value(0 or 1).");
+            Console.Write("Enter the number: ");
+            int check = int.Parse(Console.ReadLine());
+            Console.Write("Enter the bit position: ");
+            int bit = int.Parse(Console.ReadLine()) - 1;
+            //Reads the user input and saves the numbers as integers.
+            //Subtracting 1 from integer bit allows a user to input 1 and
+            //check the first bit instead of 0 for the first position.
+
+            int i = 1;
+            //Bit value of 1 = 00000001
+
+            int mask = i << bit;
+            //Moves the 1 in the integer i a number of positions = integer bit
+
+            Console.WriteLine((check & mask) != 0 ? 1 : 0);
+            //If both check and mask are not equal to 0 the bit is 1
+            //If both do not meet the condition the bit is 0
+        }
+    }
+}
