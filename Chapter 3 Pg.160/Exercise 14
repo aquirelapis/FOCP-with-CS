@@ -1,0 +1,24 @@
+Write a program that checks if a given number n (1 < n < 100) is a prime number (i.e. it is divisible
+without remainder only to itself and 1).
+
+namespace PrimeNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a whole number between 1 and 100 to see" +
+                " if it is a Prime Number: ");
+            int number = int.Parse(Console.ReadLine());
+            //Takes the user's input and saves it as an integer.
+
+            int divCounter = 0;
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                divCounter += number % i == 0 ? 1 : 0;
+            }
+
+            Console.WriteLine("Is Prime: " + (divCounter > 0 ? "false" : "true"));
+        }
+    }
+}
