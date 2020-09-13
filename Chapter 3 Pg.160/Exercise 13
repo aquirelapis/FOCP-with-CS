@@ -1,0 +1,33 @@
+We are given the number n, the value v (v = 0 or 1) and the position p. Write a sequence of operations
+that changes the value of n, so the bit on the position p has the value of v. 
+Example: n=35, p=5, v=0 -> n=3.
+Another Example: n=35, p=2, v=1 -> n=39.
+
+namespace TransmuteBit
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Give a number, a bit position, and a value" +
+                "(0 or 1) to change the value of the chosen bit.");
+            Console.Write("Enter the number: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.Write("Enter the position of the bit you would like to change: ");
+            int bitPosition = int.Parse(Console.ReadLine()) - 1;
+            Console.Write("Enter the value you would like to change the bit into: ");
+            int valueSwap = int.Parse(Console.ReadLine());
+            //Takes the number, bit position, and value and saves them as integers.
+            //bitPosition is subtracted by 1 to allow users to select the first
+            //position without having to enter 0.
+
+            number = number & (~(1 << bitPosition));
+            //Reset the bit at position
+
+            number = number | (valueSwap << bitPosition);
+            //Writes the new value of bit at bitPosition
+
+            Console.WriteLine("The new number is: " + number);
+        }
+    }
+}
