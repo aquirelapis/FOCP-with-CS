@@ -1,0 +1,19 @@
+Declare two variable of type int. Assign to them values 5 and 10 respectively. Exchange (swap) their values and print them.
+
+namespace ValueSwap
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number1 = 5;
+            int number2 = 10;
+            int tempNumber = number1;
+            number1 = number2;
+            number2 = tempNumber;
+
+            Console.WriteLine(number1);
+            Console.WriteLine(number2);
+        }
+    }
+}
