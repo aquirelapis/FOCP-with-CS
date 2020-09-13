@@ -1,0 +1,37 @@
+Write a boolean expression that checks if the bit on position p in the integer v has the value 1.
+Example v=5, p=1 -> false.
+
+namespace TrueBit
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number and a bit position to see if the" +
+                " value of the checked bit is 1");
+            Console.Write("Enter the number: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.Write("Enter the bit position: ");
+            int bitPosition = (int.Parse(Console.ReadLine()) - 1);
+            //Collects the user's number and bit position.
+            //Subtracting 1 from bitPosition allows a user to input 1 and
+            //check the first bit instead of 0 for the first position.
+
+            int i = 1;
+            //1 has a bit value of 00000001
+
+            int mask = i << bitPosition;
+
+            if((number & mask) != 0)
+            {
+                Console.WriteLine("The bit in position {0} is 1", bitPosition + 1);
+            }
+            else
+            {
+                Console.WriteLine("The bit in position {0} is 0", bitPosition + 1);
+            }
+            //If both number and mask are not equal to 0 the result is true.
+            //If both conditions are not met the result is false.
+        }
+    }
+}
