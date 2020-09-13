@@ -1,0 +1,23 @@
+Write a program that prints on the console the perimeter and the area of a rectangle by given side and
+height entered by the user.
+
+namespace RectangleStats
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the side and height of a rectangle to find " +
+                "its perimeter and area.");
+            Console.Write("Enter the length of the rectangle's side: ");
+            int side = int.Parse(Console.ReadLine());
+            Console.Write("Enter the height of the rectangle: ");
+            int height = int.Parse(Console.ReadLine());
+
+            int perimeter = ((side * 2) + (height * 2));
+            int area = (side * height);
+            Console.WriteLine("The area is {0} and the perimeter is {1}", area,
+                perimeter);
+        }
+    }
+}
