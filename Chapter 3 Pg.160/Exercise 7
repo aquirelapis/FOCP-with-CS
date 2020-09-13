@@ -1,0 +1,17 @@
+The gravitational field of the moon id approximately 17% of that on the Earth. Write a program that
+calculates the wieght of a man on the moon by a given weight on the earth.
+
+namespace MoonWeight
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter your weight in lbs to find how much you would" +
+                "weigh in the moon's gravity: ");
+            int weight = int.Parse(Console.ReadLine());
+            int moonWeight = ((weight / 100) * 17);
+            Console.WriteLine("Your would weigh {0} lbs on the moon", moonWeight);
+        }
+    }
+}
