@@ -1,0 +1,18 @@
+Write a program, which compares correctly two real numbers with accuracy at least 0.000001.
+
+namespace CompareDecimal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float a = 5.000002f;
+            float b = 5.000001f;
+            Console.WriteLine("Variabe a is equal to : " + a);
+            Console.WriteLine("Variable b is equal to : " + b);
+            Console.WriteLine("(a > b) = " + (a > b));
+            Console.WriteLine("(a < b) = " + (a < b));
+            Console.WriteLine("(a == b) = " + (a == b));
+        }
+    }
+}
