@@ -1,0 +1,28 @@
+Write an expression that checks for a given point {x, y} if it is within the circle K({0,0}, R=5). 
+Explanation: the point {0, 0} is the center of the circle and 5 is the radius.
+
+namespace ShapePoint
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter in a point on a grid to see if it is within the" +
+                " given circle(center = {0,0}, Radius = 5).");
+            Console.Write("Give your x coordinate: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write("Give your y coordinate: ");
+            int y = int.Parse(Console.ReadLine());
+
+            bool inCircle = ((x * x) + (y * y) <= 25);
+            if(inCircle == true)
+            {
+                Console.WriteLine("The given point is inside the circle");
+            }
+            else
+            {
+                Console.WriteLine("The given point is not inside the circle");
+            }
+        }
+    }
+}
