@@ -1,0 +1,12 @@
+Compile and execute the sample program from this chapter using the command line prompt (the console) and Visual Studio.
+
+namespace HelloCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine("Hello C#!");
+        }
+    }
+}
