@@ -1,0 +1,33 @@
+Write a program that takes as input a four-digit number in format abcd (e.g. 2011) and performs the
+following actions: 
+- Calculates the sum of the digits (in our example 2+0+1+1 = 4).
+- Prints on the console the number in reversed order: dcba (in our example 1102).
+- Puts the last digit in the first position: dabc (in our example 1201).
+- Exchanges the second and third digits: acbd (in our example 2101).
+
+namespace DigitSwapper
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a four digit number to have its components" +
+                " jumbled about: ");
+            int digits = int.Parse(Console.ReadLine());
+
+            int d = digits % 10;
+            int c = (digits / 10) % 10;
+            int b = (digits / 100) % 10;
+            int a = (digits / 1000) % 10;
+
+            Console.WriteLine("The digits entered were: " + digits);
+            Console.WriteLine("The sum of the digits is: "  + (a + b + c + d));
+            Console.WriteLine("The reverse order of the digits is: "
+                + d + c + b + a);
+            Console.WriteLine("The last digit placed in the first positon: "
+                + d + a + b + c);
+            Console.WriteLine("The second and third digit exchanged: "
+                + a + c + b + d);
+        }
+    }
+}
