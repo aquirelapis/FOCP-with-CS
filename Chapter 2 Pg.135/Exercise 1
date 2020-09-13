@@ -1,0 +1,26 @@
+Declare several variables by selecting for each one of them the most appropriate of the types sbyte, byte, short, ushort, int, uint,
+long and ulong in order to assign them the following values: 52,130; -115; 4825932; 97; -10000; 20000; 224; 970,700,000; 112; -44;
+-1,000,000; 1990; 123456789123456789.
+
+sbyte, 8bit, -128/127
+byte, 8bit, 0/255
+short, 16bit, -32768/32767
+ushort, 16bit, 0/65535
+int, 32bit, -2147483648/2147483647
+uint, 32bit, 0/4294967295
+long, 64bit, -9223372036854775808/9223372036854775807
+ulong, 64bit, 0/18446744073709551615
+
+52,130 //ushort
+-115 //sbyte
+4,825,932 //int
+97 //sbyte
+-10,000 //short
+20,000 //short
+224 //byte
+970,700,000 //int
+112 //sbyte
+-44 //sbyte
+-1,000,000 //int
+1990 //short
+123,456,789,123,456,789 //long
