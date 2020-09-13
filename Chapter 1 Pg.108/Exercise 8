@@ -1,0 +1,14 @@
+Write a program that prints on the cosnole the current date and time.
+
+namespace PrintDateTime
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now);
+            Console.ReadLine();
+        }
+    }
+}
