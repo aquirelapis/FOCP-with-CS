@@ -1,4 +1,4 @@
-Compile and execute the sample program from this chapter using the command line prompt (the console) and Visual Studio.
+//Compile and execute the sample program from this chapter using the command line prompt (the console) and Visual Studio.
 
 namespace HelloCSharp
 {
