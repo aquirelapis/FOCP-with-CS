@@ -1,4 +1,4 @@
-Describe the difference between C# and the .NET Framework.
+//Describe the difference between C# and the .NET Framework.
 
-C# is an object oriented programming language that allows code to be written in a format more easily read by english language
-speakers. The .NET Framework is a software development framework for building and running applications on Windows.
+//C# is an object oriented programming language that allows code to be written in a format more easily read by english language
+//speakers. The .NET Framework is a software development framework for building and running applications on Windows.
