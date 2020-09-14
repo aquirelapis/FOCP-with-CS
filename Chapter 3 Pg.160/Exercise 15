@@ -1,0 +1,52 @@
+//Write a program that exchanges the values of the bits on positions 3, 4 and 5 with bits on positions 24,
+//25 and 26 of a given 32-bit unsigned integer.
+
+namespace BitExchange
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter an unsigned 32-bit integer to swap its 3rd, 4th," +
+                " and 5th bits with its 24th, 25th, and 26th bits: ");
+            int n = Int32.Parse(Console.ReadLine());
+            //Collects user number and saves it as a 32 bit integer.
+
+            //1's bits are 00000001. 0 must be used to check the first bit from
+            //right to left.
+
+            int mask = 1 << 2;
+            int bitPos3 = (n & mask) != 0 ? 1 : 0;
+            mask = 1 << 3;
+            int bitPos4 = (n & mask) != 0 ? 1 : 0;
+            mask = 1 << 4;
+            int bitPos5 = (n & mask) != 0 ? 1 : 0;
+            mask = 1 << 23;
+            int bitPos24 = (n & mask) != 0 ? 1 : 0;
+            mask = 1 << 24;
+            int bitPos25 = (n & mask) != 0 ? 1 : 0;
+            mask = 1 << 25;
+            int bitPos26 = (n & mask) != 0 ? 1 : 0;
+            //Integer 1 has a bit value of 00000001. 0 must be input to check the
+            //value of the first bit position of another number. All mask bit moves
+            //are 1 less to take into account the first position = 0. I.E. 2 is used
+            //to find the value of bit position 3.
+
+            Console.WriteLine("Bit positions = 3: {0}, 4: {1}, 5: {2}, 24: {3}," +
+                " 25: {4}, 26: {5}", bitPos3, bitPos4, bitPos5, bitPos24, bitPos25,
+                 bitPos26);
+            //Prints bit values to console before they are swapped to confirm value
+            //changes.
+
+            n = (bitPos3 == 0) ? n = n & (~(1 << 23)) : n = n | (1 << 23);
+            n = (bitPos4 == 0) ? n = n & (~(1 << 24)) : n = n | (1 << 24);
+            n = (bitPos5 == 0) ? n = n & (~(1 << 25)) : n = n | (1 << 25);
+            n = (bitPos24 == 0) ? n = n & (~(1 << 2)) : n = n | (1 << 2);
+            n = (bitPos25 == 0) ? n = n & (~(1 << 3)) : n = n | (1 << 3);
+            n = (bitPos26 == 0) ? n = n & (~(1 << 4)) : n = n | (1 << 4);
+            //Bit movements are reduced by 1 just like the bit checker.
+
+            Console.WriteLine(n);
+        }
+    }
+}
