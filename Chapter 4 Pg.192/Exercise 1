@@ -1,4 +1,4 @@
-Write a program that reads from the console three numbers of type int and print their sum.
+//Write a program that reads from the console three numbers of type int and print their sum.
 
 namespace TripleSum
 {
