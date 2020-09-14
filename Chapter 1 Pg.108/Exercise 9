@@ -1,4 +1,4 @@
-Write a program that prints the square root of 12345.
+//Write a program that prints the square root of 12345.
 
 namespace SquareRoot
 {
