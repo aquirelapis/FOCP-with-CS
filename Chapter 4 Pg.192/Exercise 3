@@ -1,0 +1,36 @@
+A given company has name, address, phone number, fax number, web site, and manager. The manager has name,
+surname, and phone number. Write a program that reads information about the company and its manager and then prints
+it on the console.
+
+namespace InfoScammer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter information about your company");
+            Console.Write("Enter your company's name: ");
+            string companyName = Console.ReadLine();
+            Console.Write("Enter your company's address: ");
+            string companyAddress = Console.ReadLine();
+            Console.Write("Enter your company phone number: ");
+            string companyNumber = Console.ReadLine();
+            Console.Write("Enter your company fax number: ");
+            string faxNumber = Console.ReadLine();
+            Console.Write("Enter you company website: ");
+            string webSite = Console.ReadLine();
+            Console.Write("Enter your manager's first name: ");
+            string firstName = Console.ReadLine();
+            Console.Write("Enter your manager's last name: ");
+            string lastName = Console.ReadLine();
+            Console.Write("Enter your manager's phone number: ");
+            string managerNumber = Console.ReadLine();
+
+            Console.WriteLine("Company Name = {0}, Company Address = {1}, " +
+                " Company Phone Number = {2}, Fax Number = {3}, Web Site = {4}," +
+                " Manager Name = {5} {6}, Manager Phone Number = {7}", companyName,
+                companyAddress, companyNumber, faxNumber, webSite, firstName,
+                lastName, managerNumber);
+        }
+    }
+}
