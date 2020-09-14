@@ -1,4 +1,4 @@
-Declare two variable of type int. Assign to them values 5 and 10 respectively. Exchange (swap) their values and print them.
+//Declare two variable of type int. Assign to them values 5 and 10 respectively. Exchange (swap) their values and print them.
 
 namespace ValueSwap
 {
