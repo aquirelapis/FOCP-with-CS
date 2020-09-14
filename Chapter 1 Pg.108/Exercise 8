@@ -1,4 +1,4 @@
-Write a program that prints on the cosnole the current date and time.
+//Write a program that prints on the cosnole the current date and time.
 
 namespace PrintDateTime
 {
