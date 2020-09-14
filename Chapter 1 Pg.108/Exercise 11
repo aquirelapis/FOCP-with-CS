@@ -1,4 +1,4 @@
-Write a program that reads your age from the console and prints your age after 10 years.
+//Write a program that reads your age from the console and prints your age after 10 years.
 
 namespace AgeAfterDecade
 {
