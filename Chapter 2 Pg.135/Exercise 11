@@ -1,5 +1,5 @@
-Write a program to prints on the console an isosceles triangle which consists of the copyright character "C". Unicode: '0x00A9' 
-\u00a9 © alt,0169,alt
+//Write a program to prints on the console an isosceles triangle which consists of the copyright character "C". Unicode: '0x00A9' 
+//\u00a9 © alt,0169,alt
 
 namespace CopyrightTriangle
 {
