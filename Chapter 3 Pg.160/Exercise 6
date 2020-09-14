@@ -1,5 +1,5 @@
-Write a program that prints on the console the perimeter and the area of a rectangle by given side and
-height entered by the user.
+//Write a program that prints on the console the perimeter and the area of a rectangle by given side and
+//height entered by the user.
 
 namespace RectangleStats
 {
