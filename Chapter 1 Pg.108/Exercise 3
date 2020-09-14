@@ -1,5 +1,5 @@
-Find the description of the System.Console.WriteLine() method and its different possible parameters in the MSDN Library.
+//Find the description of the System.Console.WriteLine() method and its different possible parameters in the MSDN Library.
 
-System.WriteLine writes the specified data, followed by the current line terminator, to the standard output stream.
+//System.WriteLine writes the specified data, followed by the current line terminator, to the standard output stream.
 
-https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netcore-3.1
+//https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netcore-3.1
