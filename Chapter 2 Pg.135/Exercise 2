@@ -1,13 +1,13 @@
-Which of the following values can be assigned to variables of type float, double and decimal: 5, -5.01, 34.567839023; 12.345;
-8923.1234857; 3456.091124875956542151256683467?
+//Which of the following values can be assigned to variables of type float, double and decimal: 5, -5.01, 34.567839023; 12.345;
+//8923.1234857; 3456.091124875956542151256683467?
 
-float, 32bit, 7 decimal accuracy
-double, 64bit, 15-16 decimal accuracy
-decimal, 128bit, 28-29 decimal accuracy
+//float,   32bit,  7 decimal accuracy
+//double,  64bit,  15-16 decimal accuracy
+//decimal, 128bit, 28-29 decimal accuracy
 
-5 //float
--5.01 //float
-34.567839023 //double
-12.345 //float
-8923.1234857 //float
-3456.091124875956542151256683467 //decimal
+//5                                //float
+//-5.01                            //float
+//34.567839023                     //double
+//12.345                           //float
+//8923.1234857                     //float
+//3456.091124875956542151256683467 //decimal
