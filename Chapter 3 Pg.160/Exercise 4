@@ -1,4 +1,4 @@
-Write an experssion that check whether the third bit in a given integer is 1 or 0.
+//Write an experssion that check whether the third bit in a given integer is 1 or 0.
 
 namespace CheckBit
 {
