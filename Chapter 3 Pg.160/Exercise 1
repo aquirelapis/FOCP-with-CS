@@ -1,4 +1,4 @@
-Write an expression that checks whether an integer is odd or even.
+//Write an expression that checks whether an integer is odd or even.
 
 namespace EvenChecker
 {
