@@ -1,4 +1,4 @@
-Write an expression that calculates the area of a trapezoid by given sides a, b, and height h.
+//Write an expression that calculates the area of a trapezoid by given sides a, b, and height h.
 
 namespace TrapezoidArea
 {
