@@ -1,4 +1,4 @@
-Write an expression that looks for a given integer if its third digit (right to left) is 7.
+//Write an expression that looks for a given integer if its third digit (right to left) is 7.
 
 namespace ThirdDigitSeven
 {
