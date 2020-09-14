@@ -1,5 +1,5 @@
-The gravitational field of the moon id approximately 17% of that on the Earth. Write a program that
-calculates the wieght of a man on the moon by a given weight on the earth.
+//The gravitational field of the moon id approximately 17% of that on the Earth. Write a program that
+//calculates the wieght of a man on the moon by a given weight on the earth.
 
 namespace MoonWeight
 {
