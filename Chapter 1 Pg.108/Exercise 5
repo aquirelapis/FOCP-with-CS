@@ -1,4 +1,4 @@
-Modify the sample program to print a different greeting, for example "Good Day!".
+//Modify the sample program to print a different greeting, for example "Good Day!".
 
 namespace GoodDay
 {
