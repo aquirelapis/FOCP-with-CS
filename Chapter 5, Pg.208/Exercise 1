@@ -1,0 +1,31 @@
+//Write an if-statement that takes two integer variables and exchanges their values if the first one is
+//greater than the second one.
+
+namespace GreaterSwap
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter two integers. If the first is greater than" +
+                "the second then their values will be swapped.");
+            Console.Write("Enter integer A: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Enter integer B: ");
+            int b = int.Parse(Console.ReadLine());
+            int c = a;
+            //Saves user input as integers a and b. Declares value of third int c
+            //so that the values of a and b can be swapped.
+
+            if (a > b)
+            {
+                a = b;
+                b = c;
+            }
+            //Swaps a and b if a is greater than b.
+
+            Console.WriteLine("A = {0}, B = {1}", a, b);
+            //Prints result of shenanigans.
+        }
+    }
+}
