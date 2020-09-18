@@ -1,0 +1,24 @@
+//Write a program that reads two numbers from the console and prints the greater of them. Solve the problem
+//without using conditional statements.
+
+namespace NoCondition
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter two numbers to see which of them is greater.");
+            Console.Write("Enter the first number: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int b = int.Parse(Console.ReadLine());
+            //Takes user input and saves them as values a and b.
+
+            int c = Math.Max(a, b);
+            //Math.Max determines the greater of two variables without using
+            //conditional statements.
+
+            Console.WriteLine("The greater of {0} and {1} is: {2}", a, b, c);
+        }
+    }
+}
