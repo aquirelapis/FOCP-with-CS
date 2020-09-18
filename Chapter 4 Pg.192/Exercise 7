@@ -1,0 +1,63 @@
+//Write a program that reads five integer numbers and prints their sum. If an invalid number is entered the
+//program should prompt the user to enter another number.
+
+namespace CorrectNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c, d, e;
+            bool successParse = false;
+            Console.WriteLine("Enter five integers to have them added together.");
+            //Declares integers a-e without giving them a value. Creates bool
+            //condition that will change when the program successfully parses.
+            //Asks the user for input while explaining necessary conditions.
+
+            do
+            {
+                Console.Write("Enter the first number: ");
+                successParse = Int32.TryParse(Console.ReadLine(), out a);
+                Console.WriteLine(successParse);
+            } while (!successParse);
+            
+            do
+            {
+                Console.Write("Enter the second number: ");
+                successParse = Int32.TryParse(Console.ReadLine(), out b);
+                Console.WriteLine(successParse);
+            } while (!successParse);
+
+            do
+            {
+                Console.Write("Enter the third number: ");
+                successParse = Int32.TryParse(Console.ReadLine(), out c);
+                Console.WriteLine(successParse);
+            } while (!successParse);
+
+            do
+            {
+                Console.Write("Enter the fourth number: ");
+                successParse = Int32.TryParse(Console.ReadLine(), out d);
+                Console.WriteLine(successParse);
+            } while (!successParse);
+
+            do
+            {
+                Console.Write("Enter the fifth number: ");
+                successParse = Int32.TryParse(Console.ReadLine(), out e);
+                Console.WriteLine(successParse);
+            } while (!successParse);
+            //These Do-While loops take the user input and save them as out a-e.
+            //If the comp does not recognize the input as a valid Integer then the
+            //bool successParse reads as false and the user is prompted to try
+            //entering another value until a correct one is recieved.
+
+            int sum = (a + b + c + d + e);
+            //Adds the values of a-e.
+
+            Console.WriteLine("The sum of the entered numbers is: {0}", sum);
+            //Writes the value of sum.
+        }
+    }
+}
