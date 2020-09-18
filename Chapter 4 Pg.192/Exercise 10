@@ -1,0 +1,27 @@
+//Write a program that reads an integer number n from the console and prints all numbers in the range
+//[1...n], each on a separate line.
+
+namespace RangePrinter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter an integer to have every whole number between 1 " +
+                "and itself printed on the console: ");
+            int n = Int32.Parse(Console.ReadLine());
+            //Takes the user's input and saves it as integer n.
+
+            int counter = 1;
+            //counter starts at one because 1 will always be printed.
+
+            do
+            {
+                Console.WriteLine(counter);
+                counter++;
+            } while (counter <= n);
+            //Prints the current value of counter, Increments counter by 1.
+            //If counter is less than or equal to n the do body repeats.
+        }
+    }
+}
