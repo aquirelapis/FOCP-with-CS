@@ -1,0 +1,53 @@
+//Write a program that calculates the sum (with precision of 0.001) of the following sequence: 1 + 1/2 - 
+//1/3 + 1/4 - 1/5 + ...
+
+namespace FractionAdder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sum = 1;
+            double prevSum = 0.5;
+            double counter = 2;
+            double a;
+            //Declares starting value for sum.
+            //prevSum defaulted to 0.5 so that the first Math.Abs can be true.
+            //counter starts at 2 for the first denominator.
+            //a is declared without a value, it will recieve one during the while
+            //loop.
+
+            while (Math.Abs(sum - prevSum) > 0.001)
+            {
+                a = 1 / counter;
+                prevSum = sum;
+
+                if (counter % 2 != 0)
+                {
+                    a *= -1;
+                }
+                sum = prevSum + a;
+                counter++;
+
+                //Console.WriteLine("prevSum: " + prevSum);
+                //Console.WriteLine("a: " + a);
+                //Console.WriteLine("sum: " + sum);
+                //Console.WriteLine("counter: " + counter);
+                //I used these functions to check the output of each iteration
+                //because my original loop condition did not contain Math.Abs.
+                //It only looped twice before ending :(
+            }
+            //If the absolute value of sum - prevSum is gretaer than 0.001 the
+            //loop body is triggered. 
+            //a stands in for our fraction. 
+            //prevSum keeps the value of sum before it is changed.
+            //An if statement checks if the denominator produced by counter is odd
+            //and multiplies the odds by -1 to produce negative numbers.
+            //sum has the value of a added to it.
+            //counter is iterated each time to produce the next denominator.
+
+            Console.WriteLine(sum);
+            //sum's value after about 999 iterations of the while loop is 1.307.
+        }
+    }
+}
