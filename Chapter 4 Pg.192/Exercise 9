@@ -1,0 +1,33 @@
+//Write a program that reads an integer number n from the console. After that reads n numbers from the
+//console and prints their sum.
+
+namespace AdditionConsole
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the quantity of integers you would like to add" +
+                " together: ");
+            int n = int.Parse(Console.ReadLine());
+            //Takes the number of integers the console will recieve to be added as
+            //input from the user.
+
+            int sum = 0;
+            //Sum starts at zero.
+
+            for ( int c = 1; c <= n; c++)
+            {
+                Console.Write("Enter the next number: ");
+                int a = int.Parse(Console.ReadLine());
+                sum = sum + a;
+            }
+            //c starts at one because c++ will not trigger until after the first loop.
+            //Takes user input, saves as new a value, adds a to sum.
+
+            Console.WriteLine("The sum of your {0} integers is: {1}", n, sum);
+            //Prints the sum of all numbers, prints the number of integers asked for
+            //to clarify.
+        }
+    }
+}
