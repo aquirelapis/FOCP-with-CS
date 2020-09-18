@@ -1,0 +1,54 @@
+//Write a programm that reads from the console two integer numbers (int) and prints how many numbers between
+//them exist, such that the remainder of their division by 5 is 0.
+//Example: in the range (14,25) there are 3 such numbers: 15, 20, and 25.
+
+namespace FifthOfNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter two numbers to see how many numbers divisible" +
+                " by 5 are between them.");
+            Console.Write("Enter the first number: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int b = int.Parse(Console.ReadLine());
+            //Takes user input for two integers.
+
+            int counter;
+            int maxCounter;
+            if (a > b)
+            {
+                counter = b;
+                maxCounter = a;
+            }
+            else
+            {
+                counter = a;
+                maxCounter = b;
+            }
+            //counter = the lesser of a and b.
+            //maxCounter = greater of a and b.
+
+            int fiveCounter = 0;
+            //Will keep track of numbers evenly divisible by 5.
+
+            while (counter <= maxCounter)
+            {
+                if (counter % 5 == 0)
+                {
+                    fiveCounter++;
+                }
+                counter++;
+            }
+            //The lesser number of a and b is checked to see if it is divisible by 5.
+            //If counter is divisible by five without remainder fiveCounter is
+            //incremented by 1. counter is incremented and the cycle of checking
+            //repeats until counter is greater that maxCounter.
+
+            Console.WriteLine("There are {0} numbers divisible by 5 without" +
+                " remainder between {1} and {2}.", fiveCounter, a, b);
+        }
+    }
+}
